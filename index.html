@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="min-h-screen max-w-md bg-slate-100 mx-auto py-6">
+        <header>
+            <nav class="flex justify-center items-center  ">
+                <div class="mt-10 justify-center items-center w-9/12 mb-10">
+                    <img class="absolute"src="image/Rectangle 1.png" alt="" srcset="">
+                    <img class="w-16 mt-10 mx-auto" src="image/Group.png" alt="" srcset="">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Login section -->
+            <div class="  w-9/12 mx-auto">
+                <!-- <div class="hero-content flex-col lg:flex-row-reverse"> -->
+                  <!-- <div class="text-center lg:text-left">
+                    <h1 class="text-5xl font-bold">Login now!</h1>
+                    <p class="py-6">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                  </div> -->
+                  <div class="card   max-w-md  shadow-2xl">
+                    <form class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label">Account Number</label>
+                        <input value="01302126900" id="account-number"  type="number" class="input"  placeholder="Type Account Number" required />
+                        <label class="fieldset-label">PIN</label>
+                        <input id="account-pin" type="text" class="input"  placeholder="type (4 digit pin) your PIN" required />
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                        <button id="btn-login" class="btn btn-neutral mt-4">Login</button>
+                      </fieldset>
+                    </div>
+                </form>
+                <!-- </div> -->
+              </div>
+
+        </main>
+
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body  class="bg-slate-800">
+    <!-- Header Part -->
+   <section class="min-h-screen max-w-md bg-slate-100 mx-auto py-6">
+    <header>
+        <nav class="flex justify-between items-center">
+            <img class="w-14 " src="image/Group.png" alt="">
+            <div class="-ml-32">
+                <h1 class="font-bold text-3xl">$ <span id="main-balance">45000</span></h1>
+                <p >Available balance</p>
+            </div>
+            <div>
+                <button class="btn mr-5 font-bold">Log Out</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Welcome to payoo part -->
+    <section class="" >
+        <h1 class="text-2xl font-bold mb-1">&#x1F525; Welcome to payooo!</h1>
+        <p class="w-11/12 mx-auto">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        <div class="cards cursor-pointer grid grid-cols-3  gap-3 mt-5 w-11/12 mx-auto">
+            <div class="box border p-2 rounded-md ">
+                <img class="w-8 mx-auto" src="wallet 1.png" alt="">
+                <h3 class="text-center">Add Money</h3>
+
+            </div>
+            <div class="box border p-2 rounded-md  ">
+                <img class="w-8 mx-auto" src="wallet 1.png" alt="">
+                <h3 class="text-center">Cash Out</h3>
+
+            </div>
+            <div class="box border p-2 rounded-md ">
+                <img class="w-8 mx-auto" src="wallet 1.png" alt="">
+                <h3 class="text-center">Transfer Money</h3>
+
+            </div>
+            <div class="box border p-2 rounded-md ">
+                <img class="w-8 mx-auto" src="wallet 1.png" alt="">
+                <h3 class="text-center">Get Bonus</h3>
+
+            </div>
+            <div class="box border p-2 rounded-md ">
+                <img class="w-8 mx-auto" src="wallet 1.png" alt="">
+                <h3 class="text-center">Pay Bill</h3>
+
+            </div>
+            <div class="box border p-2 rounded-md ">
+                <img class="w-8 mx-auto" src="wallet 1.png" alt="">
+                <h3 class="text-center">Transaction</h3>
+
+            </div>
+           
+
+        </div>
+     </section>
+     <section>
+        <h1 class="text-blue-500 mt-4 w-11/12 mx-auto text-l font-bold">Add Money</h1>
+        <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                    <legend>Select Bank </legend>
+                  <fieldset class="fieldset"><select class="select">
+                    <option disabled selected>Select Bank</option>
+                    <option value="Bkash">Bkash </option>
+                    <option value="Nogod">Nogod</option>
+                    <option  value="DBBL">DBBL</option>
+                  </select>
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Account Number</label>
+                    <input value="01302126900" id="account-number"  type="number" class="input"  placeholder="Type Account Number" required />
+                    <label class="fieldset-label">PIN</label>
+                    <input id="account-pin" type="text" class="input"  placeholder="type (4 digit pin) your PIN" required />
+                    <label class="fieldset-label">Enter Your Amount</label>
+                    <input id="Amount"  type="number" class="input"  placeholder="Your Amount" required />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="add-money" class="btn bg-blue-700 text-white mt-4">Add Money</button>
+                  </fieldset>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
+     </section>
+
+   </section>
+
+ 
+<script src="addmoney.js"></script>
+</body>
+</html>
