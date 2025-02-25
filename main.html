@@ -26,12 +26,12 @@
         <h1 class="text-2xl font-bold mb-1">&#x1F525; Welcome to payooo!</h1>
         <p class="w-11/12 mx-auto">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         <div class="cards cursor-pointer grid grid-cols-3  gap-3 mt-5 w-11/12 mx-auto">
-            <div class="box border p-2 rounded-md hover:bg-green-100 ">
+            <div id="add-money-box" class="box border p-2 rounded-md hover:bg-green-100 ">
                 <img class="w-8 mx-auto" src="wallet 1.png" alt="">
                 <h3 class="text-center">Add Money</h3>
 
             </div>
-            <div class="box border p-2 rounded-md hover:bg-green-100 ">
+            <div id="cash-out-box" class="box border p-2 rounded-md hover:bg-green-100 ">
                 <img class="w-8 mx-auto" src="wallet 1.png" alt="">
                 <h3 class="text-center">Cash Out</h3>
 
@@ -60,7 +60,7 @@
 
         </div>
      </section>
-     <section>
+     <section id="money-add">
         <h1 class="text-blue-500 mt-4 w-11/12 mx-auto text-l font-bold">Add Money</h1>
         <div class="">
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -90,11 +90,36 @@
             </div>
           </div>
      </section>
+     <!-- Cash out -->
+     <section id="cash-out">
+        <h2>Cash Out</h2>
+        <div class="card  w-11/12 mx-auto    shadow-2xl">
+            <div class="card-body">
+                
+              </select>
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Account Number</label>
+                <input value="01302126900" id="account-number"  type="number" class="input"  placeholder="Type Account Number" required />
+                <label class="fieldset-label">PIN</label>
+                <input id="cashout-pin" type="text" class="input"  placeholder="type (4 digit pin) your PIN" required />
+                <label class="fieldset-label">Enter Your Amount</label>
+                <input id="amount"  type="number" class="input"  placeholder="Your Amount" required />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button id="cashout" class="btn bg-blue-700 text-white mt-4">Cashout</button>
+              </fieldset>
+              </fieldset>
+            </div>
+          </div>
+
+
+     </section>
 
    </section>
 
  
 <!-- <script src="addmoney.js"></script> -->
  <script src="recap.js"></script>
+ <script src="toggle.js"></script>
+ <script src="cashout.js"></script>
 </body>
 </html>
